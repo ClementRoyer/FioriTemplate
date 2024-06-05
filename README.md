@@ -10,13 +10,13 @@
 
 > Register credential for easier deployment
 
-- ADD a `.env` file in root directory
+- Add a `.env` file in root directory
 ```
 CFT_USERNAME=
 CFT_PASSWORD=
 ```
 
-- ADD the following code under `customerTasks->name->configuration` in file `ui5-deploy.yaml`
+- Add the following code under `customerTasks->name->configuration` in file `ui5-deploy.yaml`
 
 ```
   customTasks:
@@ -30,6 +30,8 @@ CFT_PASSWORD=
           username: env:CFT_USERNAME
           password: env:CFT_PASSWORD
 ```
+
+- Add `.env` to your `.gitignore`
 
 #### Auto Deployment on commit
 
